@@ -1,6 +1,9 @@
 
 
 import React, { Component } from 'react';
+
+import StartPage  from './lib/components/startScreen'
+
 import {
   AppRegistry,
   Text,
@@ -15,39 +18,12 @@ class MyGa extends Component {
 
     render() {
         return (
-            <Image source={require('./assets/background.jpg')}
-                  style={styles.backgroundImage}>
-
-                  {this.props.children}
-
-            </Image>
+        <StartPage/>
         )
     }
 }
 
-class TestBackgroundImage extends Component {
-    render() {
-        return (
-            <BackgroundImage>
-              <Text style={styles.text}>Fullscreen!</Text>
-            </BackgroundImage>
-        )
-    }
-}
 
-const styles = StyleSheet.create({
-    backgroundImage: {
-        flex: 1,
-        width: null,
-        height: null,
-        resizeMode: 'cover'
-    },
 
-    text: {
-        textAlign: 'center',
-        color: 'white',
-        backgroundColor: 'rgba(0,0,0,0)',
-        fontSize: 32
-    }
-});
+
 AppRegistry.registerComponent('MyGa', () => MyGa);
