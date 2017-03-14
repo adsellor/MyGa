@@ -1,13 +1,14 @@
+import StartPage  from './lib/components/startScreen';
+import Report from './lib/components/report';
+
 import React, { Component } from 'react';
-
-import StartPage  from './lib/components/startScreen'
-
 import {
   AppRegistry,
   Text,
   View,
   Image,
-  StyleSheet
+  StyleSheet,
+  Navigator,
 } from 'react-native';
 
 
@@ -15,12 +16,25 @@ import {
 class MyGa extends Component {
 
     render() {
+      const routes = [
+        {title: "Start Screne", index: 0},
+        {title: "Map Screne", index: 1},
+      ]
         return (
-        <StartPage/>
+        <Navigator
+          initialRoute  = {routes[0]}
+          renderScene ={(route,  navigator) => {
+            switch(route.index) {
+              case 0:
+                return <StartPage nextScene ={()  => navigator.push(routes[route.index  + 1])}/>
+              case 1:
+                return  <Report prevScene={() => navigator.pop()}/>
+                }
+          }}
+        />
         )
     }
 }
-
 
 
 
