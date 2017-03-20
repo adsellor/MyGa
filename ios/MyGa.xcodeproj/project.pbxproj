@@ -35,7 +35,12 @@
 		2DCD954D1E0B4F2C00145EB5 /* MyGaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* MyGaTests.m */; };
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
+<<<<<<< HEAD
 		90F8640C4CA8402593D51955 /* libRCTCamera.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D25B3B57C4444FBD68EDBE /* libRCTCamera.a */; };
+=======
+		1EF8F614A9B94C42826E5E86 /* libRCTCamera.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CCD76D54846043E2B67A01B7 /* libRCTCamera.a */; };
+		F10F3A96FFBA463289522BF6 /* libAirMaps.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 097A24C5E40145C3ACB2BA3F /* libAirMaps.a */; };
+>>>>>>> refactoring
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -255,8 +260,15 @@
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		5767651AD86144369737DAF2 /* RCTCamera.xcodeproj */ = {isa = PBXFileReference; name = "RCTCamera.xcodeproj"; path = "../node_modules/react-native-camera/ios/RCTCamera.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
 		A6D25B3B57C4444FBD68EDBE /* libRCTCamera.a */ = {isa = PBXFileReference; name = "libRCTCamera.a"; path = "libRCTCamera.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+=======
+		CBA83C75CA844A559A6A8F98 /* RCTCamera.xcodeproj */ = {isa = PBXFileReference; name = "RCTCamera.xcodeproj"; path = "../node_modules/react-native-camera/ios/RCTCamera.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
+		CCD76D54846043E2B67A01B7 /* libRCTCamera.a */ = {isa = PBXFileReference; name = "libRCTCamera.a"; path = "libRCTCamera.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		2A7BFE5390804FCA8E416332 /* AirMaps.xcodeproj */ = {isa = PBXFileReference; name = "AirMaps.xcodeproj"; path = "../node_modules/react-native-maps/ios/AirMaps.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
+		097A24C5E40145C3ACB2BA3F /* libAirMaps.a */ = {isa = PBXFileReference; name = "libAirMaps.a"; path = "libAirMaps.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+>>>>>>> refactoring
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -283,7 +295,12 @@
 				832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */,
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
+<<<<<<< HEAD
 				90F8640C4CA8402593D51955 /* libRCTCamera.a in Frameworks */,
+=======
+				1EF8F614A9B94C42826E5E86 /* libRCTCamera.a in Frameworks */,
+				F10F3A96FFBA463289522BF6 /* libAirMaps.a in Frameworks */,
+>>>>>>> refactoring
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,7 +467,12 @@
 				832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */,
 				00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */,
 				139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */,
+<<<<<<< HEAD
 				5767651AD86144369737DAF2 /* RCTCamera.xcodeproj */,
+=======
+				CBA83C75CA844A559A6A8F98 /* RCTCamera.xcodeproj */,
+				2A7BFE5390804FCA8E416332 /* AirMaps.xcodeproj */,
+>>>>>>> refactoring
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -979,10 +1001,18 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+<<<<<<< HEAD
+=======
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+>>>>>>> refactoring
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-camera/ios",
+<<<<<<< HEAD
+=======
+					"$(SRCROOT)/../node_modules/react-native-maps/ios/**",
+>>>>>>> refactoring
 				);
 			};
 			name = Debug;
@@ -1004,10 +1034,18 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+<<<<<<< HEAD
+=======
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+>>>>>>> refactoring
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-camera/ios",
+<<<<<<< HEAD
+=======
+					"$(SRCROOT)/../node_modules/react-native-maps/ios/**",
+>>>>>>> refactoring
 				);
 			};
 			name = Release;
@@ -1030,6 +1068,10 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-camera/ios",
+<<<<<<< HEAD
+=======
+					"$(SRCROOT)/../node_modules/react-native-maps/ios/**",
+>>>>>>> refactoring
 				);
 			};
 			name = Debug;
@@ -1051,6 +1093,10 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-camera/ios",
+<<<<<<< HEAD
+=======
+					"$(SRCROOT)/../node_modules/react-native-maps/ios/**",
+>>>>>>> refactoring
 				);
 			};
 			name = Release;
@@ -1081,10 +1127,18 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+<<<<<<< HEAD
+=======
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+>>>>>>> refactoring
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-camera/ios",
+<<<<<<< HEAD
+=======
+					"$(SRCROOT)/../node_modules/react-native-maps/ios/**",
+>>>>>>> refactoring
 				);
 			};
 			name = Debug;
@@ -1115,10 +1169,18 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+<<<<<<< HEAD
+=======
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+>>>>>>> refactoring
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-camera/ios",
+<<<<<<< HEAD
+=======
+					"$(SRCROOT)/../node_modules/react-native-maps/ios/**",
+>>>>>>> refactoring
 				);
 			};
 			name = Release;
@@ -1144,6 +1206,10 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+<<<<<<< HEAD
+=======
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+>>>>>>> refactoring
 				);
 			};
 			name = Debug;
@@ -1169,6 +1235,10 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+<<<<<<< HEAD
+=======
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+>>>>>>> refactoring
 				);
 			};
 			name = Release;

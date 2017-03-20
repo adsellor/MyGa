@@ -126,6 +126,10 @@ android {
 }
 
 dependencies {
+<<<<<<< HEAD
+=======
+    compile project(':react-native-maps')
+>>>>>>> refactoring
     compile project(':react-native-camera')
     compile fileTree(dir: "libs", include: ["*.jar"])
     compile "com.android.support:appcompat-v7:23.0.1"

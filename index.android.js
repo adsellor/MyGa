@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import StartPage  from './lib/components/startScreen';
 import Report from './lib/components/report';
 
@@ -39,3 +40,9 @@ class MyGa extends Component {
 
 
 AppRegistry.registerComponent('MyGa', () => MyGa);
+=======
+import { AppRegistry } from 'react-native';
+import App from './app/index';
+
+AppRegistry.registerComponent('MyGa', () => App);
+>>>>>>> refactoring
