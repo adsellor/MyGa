@@ -16,6 +16,9 @@ export default class StartPage extends Component {
   handleSettingsPress = () => {
  this.props.navigation.navigate('CamScreen');
   };
+  handleExplorePress  = ()  => {
+    this.props.navigation.navigate("MapScreen")
+  }
 
     render() {
 
@@ -32,6 +35,7 @@ export default class StartPage extends Component {
                 <Text style={styles.text}>    Report    </Text>
               </TouchableOpacity>
               <TouchableOpacity
+                  onPress= {this.handleExplorePress}
                   style={styles.lookButton}
                   >
                   <Text style={styles.text}>   Explore   </Text>
