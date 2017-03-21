@@ -17,7 +17,7 @@ export default class StartPage extends Component {
  this.props.navigation.navigate('CamScreen');
   };
   handleExplorePress  = ()  => {
-    this.props.navigation.navigate("MapScreen")
+    this.props.navigation.navigate("ReportBox")
   }
 
     render() {

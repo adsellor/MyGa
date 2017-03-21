@@ -41,6 +41,7 @@ export default class Maps extends React.Component {
         {
           coordinate: e.nativeEvent.coordinate,
           key: `issue${id++}`,
+          description: `this is a description`
         },
       ],
     });
@@ -59,7 +60,7 @@ export default class Maps extends React.Component {
         >
           {this.state.markers.map(marker => (
             <MapView.Marker
-              title={marker.key}
+              title={marker.description}
 
               key={marker.key}
               coordinate={marker.coordinate}

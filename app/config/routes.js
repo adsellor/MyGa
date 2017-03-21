@@ -3,7 +3,8 @@ import {StackNavigator} from 'react-navigation';
 
 import StartPage from '../screens/startScreen';
 import Cam from '../screens/cam';
-import Maps from '../screens/map.js'
+import Maps from '../screens/map';
+import ReportForm  from '../screens/reportForm'
 
 export  const ScreenStack = StackNavigator({
   StartScreen: {
@@ -31,8 +32,17 @@ export  const ScreenStack = StackNavigator({
       header: {
         style: {
           backgroundColor: '#32BE0A',
-        
+
         }
-      },    }
+      },
+    }
+  },
+  ReportBox: {
+    screen: ReportForm,
+    navigationOptions:  {
+      header:{
+        visible: false,
+      }
+    }
   }
-})
+});
