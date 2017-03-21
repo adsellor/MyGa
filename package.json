@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
   "name": "MyGa",
   "version": "0.0.1",
   "private": true,
@@ -8,44 +7,20 @@
     "test": "jest"
   },
   "dependencies": {
-    "react": "15.4.2",
-    "react-native": "0.42.0",
-    "react-native-camera": "git+https://github.com/lwansbrough/react-native-camera.git",
-    "react-native-camera-android": "^1.0.7",
-    "react-router-native": "^2.0.0-beta.0"
+    "firebase": "^3.7.2",
+    "react": "~15.4.1",
+    "react-native": "0.42.3",
+    "react-native-camera": "^0.6.0",
+    "react-native-maps": "^0.12.4",
+    "react-navigation": "^1.0.0-beta.7"
   },
   "devDependencies": {
     "babel-jest": "19.0.0",
     "babel-preset-react-native": "1.9.1",
     "jest": "19.0.2",
-    "react-test-renderer": "15.4.2"
+    "react-test-renderer": "~15.4.1"
   },
   "jest": {
     "preset": "react-native"
   }
-=======
-	"name": "MyGa",
-	"version": "0.0.1",
-	"private": true,
-	"scripts": {
-		"start": "node node_modules/react-native/local-cli/cli.js start",
-		"test": "jest"
-	},
-	"dependencies": {
-		"react": "~15.4.1",
-		"react-native": "0.42.3",
-		"react-native-camera": "^0.6.0",
-		"react-native-maps": "^0.12.4",
-		"react-navigation": "^1.0.0-beta.7"
-	},
-	"devDependencies": {
-		"babel-jest": "19.0.0",
-		"babel-preset-react-native": "1.9.1",
-		"jest": "19.0.2",
-		"react-test-renderer": "~15.4.1"
-	},
-	"jest": {
-		"preset": "react-native"
-	}
->>>>>>> refactoring
 }

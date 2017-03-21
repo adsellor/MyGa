@@ -1,32 +1,5 @@
-<<<<<<< HEAD
 
 
-import React, { Component } from 'react';
-
-import StartPage  from './lib/components/startScreen'
-
-import {
-  AppRegistry,
-  Text,
-  View,
-  Image,
-  StyleSheet
-} from 'react-native';
-
-
-
-class MyGa extends Component {
-
-    render() {
-        return (
-        <StartPage/>
-        )
-    }
-}
-
-
-
-=======
 /**
  * Sample React Native App
  * https://github.com/facebook/react-native
@@ -78,6 +51,5 @@ const styles = StyleSheet.create({
     marginBottom: 5,
   },
 });
->>>>>>> refactoring
 
 AppRegistry.registerComponent('MyGa', () => MyGa);

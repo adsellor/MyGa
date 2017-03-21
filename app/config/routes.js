@@ -17,6 +17,7 @@ export  const ScreenStack = StackNavigator({
   CamScreen: {
     screen: Cam,
     navigationOptions: {
+      animated: true,
       header: {
         visible: false,
       }
@@ -25,7 +26,13 @@ export  const ScreenStack = StackNavigator({
   MapScreen:  {
     screen: Maps,
     navigationOptions:  {
-      title: 'Maps'
-    }
+      title: 'Maps',
+      animated: true,
+      header: {
+        style: {
+          backgroundColor: '#32BE0A',
+        
+        }
+      },    }
   }
 })

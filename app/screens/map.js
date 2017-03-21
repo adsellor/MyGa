@@ -12,9 +12,9 @@ import MapView from 'react-native-maps';
 const { width, height } = Dimensions.get('window');
 
 const ASPECT_RATIO = width / height;
-const LATITUDE = 40.1792;
-const LONGITUDE = 44.4991;
-const LATITUDE_DELTA = 0.0922;
+const LATITUDE = 40.1930380;
+const LONGITUDE = 44.5044750;
+const LATITUDE_DELTA = 0.002;
 const LONGITUDE_DELTA = LATITUDE_DELTA * ASPECT_RATIO;
 let id = 0;
 
@@ -40,7 +40,7 @@ export default class Maps extends React.Component {
         ...this.state.markers,
         {
           coordinate: e.nativeEvent.coordinate,
-          key: `foo${id++}`,
+          key: `issue${id++}`,
         },
       ],
     });
@@ -50,6 +50,8 @@ export default class Maps extends React.Component {
     return (
       <View style={styles.container}>
         <MapView
+          showsMyLocationButton={true}
+          showsUserLocation={true}
           provider={this.props.provider}
           style={styles.map}
           initialRegion={this.state.region}
