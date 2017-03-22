@@ -13,11 +13,11 @@ export default class StartPage extends Component {
   constructor(props)  {
     super(props)
     };
-  handleSettingsPress = () => {
+		handleReportPress	=	() => {
  this.props.navigation.navigate('CamScreen');
   };
   handleExplorePress  = ()  => {
-    this.props.navigation.navigate("ReportBox")
+    this.props.navigation.navigate("MapScreen")
   }
 
     render() {
@@ -27,7 +27,7 @@ export default class StartPage extends Component {
             <Image source={require('../assets/background.jpg')}
                   style={styles.backgroundImage}>
               <TouchableOpacity
-                  onPress={this.handleSettingsPress}
+                  onPress={this.handleReportPress}
 
                   style={styles.reportButton}
 

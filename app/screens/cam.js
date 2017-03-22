@@ -10,9 +10,6 @@ import {
    Image
 } from 'react-native';
 
-import Maps from './map';
-import ReportForm from './reportForm';
-
 
 export default class Cam extends Component {
   constructor(props) {
@@ -31,7 +28,7 @@ export default class Cam extends Component {
 }
 
   handleContinuePress  = ()  => {
-    this.props.navigation.navigate("ReportBox")
+    this.props.navigation.navigate("ReportMap")
   };
 
 
