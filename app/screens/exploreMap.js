@@ -7,7 +7,7 @@ import {
   TouchableOpacity,
 } from 'react-native';
 
-import MapView from 'react-native-maps';
+import MapView, {Marker} from 'react-native-maps';
 
 const { width, height } = Dimensions.get('window');
 
@@ -61,7 +61,7 @@ export default class Maps extends Component {
           onPress={this.onMapPress}
         >
           {this.state.markers.map(marker => (
-            <MapView.Marker
+            <Marker
               title={marker.description}
 							draggable
               key={marker.key}
