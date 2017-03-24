@@ -1,13 +1,13 @@
-import  React, {Component} from 'react';
+	import  React, {Component} from 'react';
 import {
   StyleSheet,
   View,
   Text,
   Dimensions,
-  TouchableOpacity,
 } from 'react-native';
 
 import MapView, {Marker} from 'react-native-maps';
+import	ReportBox	from	'./reportBox';
 
 const { width, height } = Dimensions.get('window');
 
@@ -34,8 +34,12 @@ export default class Maps extends Component {
 		};
 
 		this.onMapPress = this.onMapPress.bind(this);
+		this.onMarkerPress	=	this.onMarkerPress.bind(this);
 	}
 
+	onMarkerPress()	{
+		return	<ReportBox/>;
+	}
 	onMapPress(e) {
 		this.setState({
 			markers: [
@@ -43,7 +47,7 @@ export default class Maps extends Component {
 				{
 					coordinate: e.nativeEvent.coordinate,
 					key: `issue${id++}`,
-					description: 'this is a description	'
+					description: 'this is a description'
 				},
 			],
 		});
@@ -62,7 +66,7 @@ export default class Maps extends Component {
         >
           {this.state.markers.map(marker => (
             <Marker
-              title={marker.description}
+							onPress={this.description}
 							draggable
               key={marker.key}
               coordinate={marker.coordinate}
@@ -70,12 +74,7 @@ export default class Maps extends Component {
           ))}
         </MapView>
         <View style={styles.buttonContainer}>
-          <TouchableOpacity
-            onPress={() => this.setState({ markers: [] })}
-            style={styles.bubble}
-          >
-            <Text>Tap To Report an Issue</Text>
-          </TouchableOpacity>
+         	<Text	style={styles.buttonContainer}>Tap To Report an Issue</Text>
         </View>
       </View>
 		);

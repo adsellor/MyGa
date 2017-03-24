@@ -1,12 +1,21 @@
-import React from 'react';
 import {StackNavigator} from 'react-navigation';
 
 import	StartPage from '../screens/startScreen';
 import	Cam from '../screens/cam';
 import	Maps from '../screens/exploreMap';
-import	ReportMap	from	'../screens/dragMap';
+import 	ReportMap	from	'../screens/reportMap';
+import	LoginScreen	from	'../screens/loginScreen';
 
 export  const ScreenStack = StackNavigator({
+	LoginScreen:	{
+		screen:	LoginScreen,
+		navigationOptions:	{
+			header:	{
+				visible:	false,
+			}
+		}
+	},
+
 	StartScreen: {
 		screen: StartPage,
 		navigationOptions: {
@@ -15,6 +24,7 @@ export  const ScreenStack = StackNavigator({
 			}
 		},
 	},
+
 	CamScreen: {
 		screen: Cam,
 		navigationOptions: {
@@ -24,6 +34,7 @@ export  const ScreenStack = StackNavigator({
 			}
 		},
 	},
+
 	MapScreen:  {
 		screen: Maps,
 		navigationOptions:  {
@@ -31,19 +42,23 @@ export  const ScreenStack = StackNavigator({
 			animated: true,
 			header: {
 				style: {
-					backgroundColor: '#32BE0A',
+					backgroundColor: '#27ae60',
 
 				}
 			},
 		}
 	},
+
 	ReportMap:	{
 		screen:	ReportMap,
 		navigationOptions:	{
-			title:	'Report',
+			title:	'Report	Issue',
 			header:	{
-				visible:	false,
+				style:	{
+					backgroundColor: '#27ae60',
+				}
 			}
-		}
+		},
+
 	}
 });

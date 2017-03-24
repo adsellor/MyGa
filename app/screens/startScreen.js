@@ -9,6 +9,7 @@ import {  Text,
 } from 'react-native';
 
 
+
 export default class StartPage extends Component {
   constructor(props)  {
     super(props)
@@ -38,7 +39,7 @@ export default class StartPage extends Component {
                   onPress= {this.handleExplorePress}
                   style={styles.lookButton}
                   >
-                  <Text style={styles.text}>   Explore   </Text>
+                  <Text style={styles.text}>   Explore    </Text>
               </TouchableOpacity>
             </Image>
 
@@ -72,7 +73,7 @@ const styles = StyleSheet.create({
 lookButton: {
   justifyContent: 'center',
   alignItems: 'center',
-  backgroundColor: '#32BE0A',
+  backgroundColor: '#2ecc71',
   marginTop: 30,
   height: 50,
   width: 180,
@@ -86,7 +87,7 @@ lookButton: {
     fontSize: 20,
     fontWeight: "100",
     borderStyle: "solid",
-    borderColor: "#32BE0A",
+    borderColor: "#27ae60",
     borderWidth : 2,
     paddingTop: 10,
     paddingBottom: 10,

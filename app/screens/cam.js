@@ -28,7 +28,7 @@ export default class Cam extends Component {
 }
 
   handleContinuePress  = ()  => {
-    this.props.navigation.navigate("ReportMap")
+    this.props.navigation.navigate("MapScreen")
   };
 
 
